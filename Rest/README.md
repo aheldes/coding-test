@@ -31,8 +31,6 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
-App will be available at `http://localhost:8000/`
-
 ### Documentation
 
 Feel free to use swagger at `/docs` to test the API or redoc at `/redoc` to see documentation.
