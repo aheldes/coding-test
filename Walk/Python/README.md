@@ -2,7 +2,8 @@
 
 ## Using docker
 
-If you are using proxy, you need to set the proxy in the Dockerfile.
+If you are using proxy, you need to set the proxy in the Dockerfile. If not, you can remove the `ENV` line in the
+Dockerfile.
 
 ### Build the image
 
