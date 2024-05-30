@@ -2,18 +2,18 @@ from pydantic import BaseModel
 
 
 class GNode(BaseModel):
-    _name: str
-    _children: list['GNode'] = []
+    name: str
+    children: list['GNode'] = []
 
     def get_name(self) -> str:
-        return self._name
+        return self.name
 
     def get_children(self) -> list['GNode']:
-        return self._children
+        return self.children
 
     # Implement __hash__ to be able to compare GNode objects as list is not hashable by default
     def __hash__(self) -> int:
-        return hash((self._name, tuple(self._children)))
+        return hash((self.name, tuple(self.children)))
 
 
 def walk_graph(node: GNode) -> list[GNode]:
