@@ -1,3 +1,5 @@
+import * as assert from 'assert'
+
 interface IGNode {
     getName(): string
 
@@ -59,4 +61,8 @@ const mainNode = new GNode("A", [nodeB, nodeC, nodeD])
 const result = paths(mainNode)
 console.log(`Found paths: ${result}`)
 
-console.log(`String representation of paths: ${JSON.stringify(result.map(path => path.map(node => node.getName())))}`)
+const stringRepresentation = JSON.stringify(result.map(path => path.map(node => node.getName())))
+console.log(`String representation of paths: ${stringRepresentation}`)
+
+assert.strictEqual(result.length, 6)
+assert.strictEqual(stringRepresentation, '[["A","B","E"],["A","B","F"],["A","C","G"],["A","C","H"],["A","C","I"],["A","D","J"]]')

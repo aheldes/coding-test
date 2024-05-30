@@ -54,4 +54,9 @@ if __name__ == "__main__":
     result = get_paths(main_node)
     print(f"Found paths: {result}")
 
-    print(f"String representation of paths: {[[node.get_name() for node in path] for path in result]}")
+    string_representation = [[node.get_name() for node in path] for path in result]
+    print(f"String representation of paths: {string_representation}")
+
+    assert len(result) == 6  # Should be 6 paths
+    assert string_representation == [['A', 'B', 'E'], ['A', 'B', 'F'], ['A', 'C', 'G'], ['A', 'C', 'H'],
+                                     ['A', 'C', 'I'], ['A', 'D', 'J']]

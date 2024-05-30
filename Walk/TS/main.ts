@@ -1,3 +1,5 @@
+import * as assert from 'assert'
+
 interface IGNode {
     getName(): string
 
@@ -40,15 +42,21 @@ const walkGraph = (node: IGNode): IGNode[] => {
     return Array.from(visitedNodes)
 }
 
-const dummyNode4 = new GNode("Node 4")
-const dummyNode5 = new GNode("Node 5")
-const dummyNode6 = new GNode("Node 6")
+const nodeJ = new GNode("J")
+const nodeI = new GNode("I")
+const nodeH = new GNode("H")
+const nodeG = new GNode("G")
+const nodeF = new GNode("F")
+const nodeE = new GNode("E")
 
-const dummyNode2 = new GNode("Node 2", [dummyNode4, dummyNode5])
-const dummyNode3 = new GNode("Node 3", [dummyNode6])
+const nodeD = new GNode("D", [nodeJ])
+const nodeC = new GNode("C", [nodeG, nodeH, nodeI])
+const nodeB = new GNode("B", [nodeE, nodeF])
 
-const mainNode = new GNode("Node 1", [dummyNode2, dummyNode3])
+const mainNode = new GNode("A", [nodeB, nodeC, nodeD])
 
 // Walk through the graph
 const result = walkGraph(mainNode)
 console.log(`Number of unique nodes: ${result.length}. Unique nodes: ${result}`)
+
+assert.strictEqual(result.length, 10) // Should be 10 unique nodes

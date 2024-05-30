@@ -37,15 +37,21 @@ def walk_graph(node: GNode) -> list[GNode]:
 
 if __name__ == "__main__":
     # Create dummy nodes
-    dummy_node4 = GNode(name="Node 4")
-    dummy_node5 = GNode(name="Node 5")
-    dummy_node6 = GNode(name="Node 6")
+    node_J = GNode(name="J")
+    node_I = GNode(name="I")
+    node_H = GNode(name="H")
+    node_G = GNode(name="G")
+    node_F = GNode(name="F")
+    node_E = GNode(name="E")
 
-    dummy_node2 = GNode(name="Node 2", children=[dummy_node4, dummy_node5])
-    dummy_node3 = GNode(name="Node 3", children=[dummy_node6])
+    node_D = GNode(name="D", children=[node_J])
+    node_C = GNode(name="C", children=[node_G, node_H, node_I])
+    node_B = GNode(name="B", children=[node_E, node_F])
 
-    main_node = GNode(name="Node 1", children=[dummy_node2, dummy_node3])
+    main_node = GNode(name="A", children=[node_B, node_C, node_D])
 
     # Walk through the graph
     result = walk_graph(main_node)
     print(f"Number of unique nodes: {len(result)}. Unique nodes: {result}")
+    
+    assert len(result) == 10  # Should be 10 unique nodes
