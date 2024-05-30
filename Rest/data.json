@@ -1,0 +1,158 @@
+{
+  "documents": {
+    "animals": "file:///C:/Users/username/Documents/animals.txt",
+    "mammals": "file:///C:/Users/username/Documents/mammals.txt",
+    "primates": "file:///C:/Users/username/Documents/primates.txt",
+    "chimpanzees": "file:///C:/Users/username/Documents/chimpanzees.txt",
+    "gorillas": "file:///C:/Users/username/Documents/gorillas.txt",
+    "carnivores": "file:///C:/Users/username/Documents/carnivores.txt",
+    "lions": "file:///C:/Users/username/Documents/lions.txt",
+    "tigers": "file:///C:/Users/username/Documents/tigers.txt",
+    "birds": "file:///C:/Users/username/Documents/birds.txt",
+    "raptors": "file:///C:/Users/username/Documents/raptors.txt",
+    "eagles": "file:///C:/Users/username/Documents/eagles.txt",
+    "hawks": "file:///C:/Users/username/Documents/hawks.txt",
+    "waterfowl": "file:///C:/Users/username/Documents/waterfowl.txt",
+    "ducks": "file:///C:/Users/username/Documents/ducks.txt",
+    "gooses": "file:///C:/Users/username/Documents/gooses.txt",
+    "reptiles": "file:///C:/Users/username/Documents/reptiles.txt",
+    "lizards": "file:///C:/Users/username/Documents/lizards.txt",
+    "chameleons": "file:///C:/Users/username/Documents/chameleon.txt",
+    "geckos": "file:///C:/Users/username/Documents/geckos.txt",
+    "snakes": "file:///C:/Users/username/Documents/snakes.txt",
+    "pythons": "file:///C:/Users/username/Documents/pythons.txt",
+    "cobras": "file:///C:/Users/username/Documents/cobras.txt"
+  },
+  "tags": {
+    "animals": {
+      "documents": [
+        "animals"
+      ],
+      "tags": {
+        "mammals": {
+          "documents": [
+            "mammals"
+          ],
+          "tags": {
+            "primates": {
+              "documents": [
+                "primates"
+              ],
+              "tags": {
+                "chimpanzees": {
+                  "documents": [
+                    "chimpanzees"
+                  ]
+                },
+                "gorillas": {
+                  "documents": [
+                    "gorillas"
+                  ]
+                }
+              }
+            },
+            "carnivores": {
+              "documents": [
+                "carnivores"
+              ],
+              "tags": {
+                "lions": {
+                  "documents": [
+                    "lions"
+                  ]
+                },
+                "tigers": {
+                  "documents": [
+                    "tigers"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "birds": {
+          "documents": [
+            "birds"
+          ],
+          "tags": {
+            "raptors": {
+              "documents": [
+                "raptors"
+              ],
+              "tags": {
+                "eagles": {
+                  "documents": [
+                    "eagles"
+                  ]
+                },
+                "hawks": {
+                  "documents": [
+                    "hawks"
+                  ]
+                }
+              }
+            },
+            "waterfowl": {
+              "documents": [
+                "waterfowl"
+              ],
+              "tags": {
+                "ducks": {
+                  "documents": [
+                    "ducks"
+                  ]
+                },
+                "geese": {
+                  "documents": [
+                    "gooses"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "reptiles": {
+          "documents": [
+            "reptiles"
+          ],
+          "tags": {
+            "lizards": {
+              "documents": [
+                "lizards"
+              ],
+              "tags": {
+                "chameleons": {
+                  "documents": [
+                    "chameleons"
+                  ]
+                },
+                "geckos": {
+                  "documents": [
+                    "geckos"
+                  ]
+                }
+              }
+            },
+            "snakes": {
+              "documents": [
+                "snakes"
+              ],
+              "tags": {
+                "pythons": {
+                  "documents": [
+                    "pythons"
+                  ]
+                },
+                "cobras": {
+                  "documents": [
+                    "cobras"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
