@@ -20,10 +20,6 @@ class GNode implements IGNode {
     public getChildren(): IGNode[] {
         return this.children
     }
-
-    public toString(): string {
-        return `GNode(name=${this.name}, children=${this.children.map((child) => child.toString())})`
-    }
 }
 
 const walkGraph = (node: IGNode): IGNode[] => {
